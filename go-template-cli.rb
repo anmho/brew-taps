@@ -5,20 +5,20 @@
 class GoTemplateCli < Formula
   desc ""
   homepage "https://github.com/anmho/go-template-cli"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anmho/go-template-cli/releases/download/v0.1.7/go-template-cli_Darwin_x86_64.tar.gz"
-      sha256 "c78a46286947ecea8876414c203eb8e509f9071285b2ffb151c63b6b0bbb6c4f"
+      url "https://github.com/anmho/go-template-cli/releases/download/v0.1.8/go-template-cli_Darwin_x86_64.tar.gz"
+      sha256 "d867a39296146b6b9fbeac6504353f60452a0d892384fd2aea110b8d59308736"
 
       def install
         bin.install "go-template-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anmho/go-template-cli/releases/download/v0.1.7/go-template-cli_Darwin_arm64.tar.gz"
-      sha256 "eb1b9605b2e226ad1462692e9e2599825e6ca1adefd398a4cc7bc96422dbb6c1"
+      url "https://github.com/anmho/go-template-cli/releases/download/v0.1.8/go-template-cli_Darwin_arm64.tar.gz"
+      sha256 "362e9ca18a9269979adca14ad5deda271749bb08f3d892413ab4b410c9c56e23"
 
       def install
         bin.install "go-template-cli"
@@ -29,8 +29,8 @@ class GoTemplateCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anmho/go-template-cli/releases/download/v0.1.7/go-template-cli_Linux_x86_64.tar.gz"
-        sha256 "7601234f31584535bf11ef529b94656ffdbbe12cdacee620bab6b558483d13a6"
+        url "https://github.com/anmho/go-template-cli/releases/download/v0.1.8/go-template-cli_Linux_x86_64.tar.gz"
+        sha256 "04a487a7e723f23522fe4e9e5fb852265f6741424a6a4b5b7474fe03dd1eb01a"
 
         def install
           bin.install "go-template-cli"
@@ -39,8 +39,8 @@ class GoTemplateCli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anmho/go-template-cli/releases/download/v0.1.7/go-template-cli_Linux_arm64.tar.gz"
-        sha256 "23ebcfb15f23e9ae9723f7f53581f99b95ad2aece2be03c4b2bb54fa17fb0572"
+        url "https://github.com/anmho/go-template-cli/releases/download/v0.1.8/go-template-cli_Linux_arm64.tar.gz"
+        sha256 "3b11234c91e5a57e897b5138e994ebde6529446c4faef655289fc5515582ab90"
 
         def install
           bin.install "go-template-cli"
