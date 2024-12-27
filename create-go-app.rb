@@ -5,20 +5,20 @@
 class CreateGoApp < Formula
   desc ""
   homepage "https://github.com/anmho/create-go-app"
-  version "1.0.17"
+  version "1.0.18"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anmho/create-go-app/releases/download/v1.0.17/create-go-app_Darwin_x86_64.tar.gz"
-      sha256 "0e1704edd639e5fca6abc7e2b108b3978c71ae562996cd84ce967b3949265608"
+      url "https://github.com/anmho/create-go-app/releases/download/v1.0.18/create-go-app_Darwin_x86_64.tar.gz"
+      sha256 "cb3ffd281a104225c9379bf4697db936cf7cbf601e9a95ea222a017bfe60cb8c"
 
       def install
         bin.install "create-go-app"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anmho/create-go-app/releases/download/v1.0.17/create-go-app_Darwin_arm64.tar.gz"
-      sha256 "ec60adc04339adc3eaf0b98e74b38bf6320882d864d6e9dafa858fe99be1fa74"
+      url "https://github.com/anmho/create-go-app/releases/download/v1.0.18/create-go-app_Darwin_arm64.tar.gz"
+      sha256 "622950a79e2e48689ba931199f19e555ad62ebbc752b842053a0f07805c42cc2"
 
       def install
         bin.install "create-go-app"
@@ -29,8 +29,8 @@ class CreateGoApp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anmho/create-go-app/releases/download/v1.0.17/create-go-app_Linux_x86_64.tar.gz"
-        sha256 "c830737a8936d91a5f9d1805c19f8070e49e35911a5ef45080e2302ce8fe5fd9"
+        url "https://github.com/anmho/create-go-app/releases/download/v1.0.18/create-go-app_Linux_x86_64.tar.gz"
+        sha256 "65f0936bd81c9eac276cb2a7fbed10dc83067cf3126919832482185262a3ca7f"
 
         def install
           bin.install "create-go-app"
@@ -39,8 +39,8 @@ class CreateGoApp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anmho/create-go-app/releases/download/v1.0.17/create-go-app_Linux_arm64.tar.gz"
-        sha256 "44d07bbbab6a516ba02800b6fc0d2e434411e171f1b0f1f2a6345f2d1f19831a"
+        url "https://github.com/anmho/create-go-app/releases/download/v1.0.18/create-go-app_Linux_arm64.tar.gz"
+        sha256 "8f0f622661320665f95f6fb6b63c718ed9086e0e8cbeecef6264d9a77843c97b"
 
         def install
           bin.install "create-go-app"
